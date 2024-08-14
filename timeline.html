@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Timeline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Gloria+Hallelujah&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Timeline Page Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef6e4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fffaf3;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-container h1 {
+            text-align: center;
+            color: #ff6f61;
+            font-family: 'Permanent Marker', cursive;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .entry {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 5px solid #ff6f61;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .entry:before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #ff6f61;
+            border-radius: 50%;
+            position: absolute;
+            left: -12px;
+            top: 18px;
+            border: 3px solid #fffaf3;
+        }
+
+        .entry h2 {
+            margin-top: 0;
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 1.5rem;
+            color: #ff6f61;
+        }
+
+        .entry p {
+            margin: 0;
+            line-height: 1.8;
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 1.2rem;
+            color: #333;
+            flex: 1;
+        }
+
+        .entry img {
+            margin-left: 20px;
+            max-width: 150px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            margin-top: 15px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="audio-container" class="hidden-audio"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+            <li><a href="gallery.html"><ion-icon name="images-outline"></ion-icon> Gallery</a></li>
+            <li><a href="playlist.html"><ion-icon name="musical-notes-outline"></ion-icon> Playlist</a></li>
+            <li><a href="registry.html"><ion-icon name="gift-outline"></ion-icon> Registry</a></li>
+            <li><a href="guestbook.html"><ion-icon name="book-outline"></ion-icon> Guestbook</a></li>
+            <li><a href="timeline.html"><ion-icon name="time-outline"></ion-icon> Timeline</a></li>
+            <li><a href="watchbites.html"><ion-icon name="videocam-outline"></ion-icon> Watch Bites</a></li>
+            <li><a href="thankyou.html"><ion-icon name="heart-outline"></ion-icon> Thank You</a></li>
+            <li><a href="https://instagram.com/nic_faii" target="_blank" class="instagram-icon">
+                <img src="imges/image1.jpg" alt="Instagram">
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class="timeline-container">
+        <h1>Our Timeline</h1>
+
+        <div class="entry">
+            <div>
+                <h2>August 2007</h2>
+                <p>This amazing, talented baby was born. From that moment, the world became a little brighter and more beautiful.</p>
+            </div>
+            <img src="imges/baby.jpg" alt="Baby Image">
+        </div>
+
+        <div class="entry">
+            <div>
+                <h2>2022</h2>
+                <p>I met a wonderful girl. She captured my heart and changed my life forever.</p>
+            </div>
+            <img src="imges/meeting.jpg" alt="Meeting Image">
+        </div>
+
+        <div class="entry">
+            <div>
+                <h2>February 17th, 2024</h2>
+                <p>I proposed to this wonderful girl. It was the best decision I have ever made. She is amazing, and I will always love her.</p>
+            </div>
+            <img src="imges/proposal.jpg" alt="Proposal Image">
+        </div>
+
+        <div class="entry">
+            <div>
+                <h2>August 15th, 2024</h2>
+                <p>This beautiful girl turns 17. She is growing, and may she have the best day ever.</p>
+            </div>
+            <img src="imges/birthday.jpg" alt="Birthday Image">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Happy Birthday!</h1>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="playlist.html">Playlist</a>
+                <a href="registry.html">Registry</a>
+                <a href="guestbook.html">Guestbook</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="thankyou.html">Thank You</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 <a href="https://yourwebsite.com">Your Website</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script>
+        document.getElementById('audio-container').innerHTML = `
+            <iframe src="audio-player2.html" style="border: none; width: 0; height: 0;"></iframe>
+        `;
+    </script>
+</body>
+</html>

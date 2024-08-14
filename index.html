@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <style>
+            /* Additional Styles for Animations and Card */
+            .welcome-message {
+                margin-top: 20px;
+                animation: fadeIn 2s ease-in;
+            }
+    
+            .birthday-card {
+                background: #ff6f61;
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                max-width: 500px;
+                margin: 20px auto;
+                text-align: center;
+                animation: slideUp 1s ease-out;
+            }
+    
+            .birthday-card h2 {
+                margin: 0;
+            }
+    
+            .birthday-card p {
+                margin: 10px 0;
+            }
+            .instagram-icon img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 10px;
+            }
+    
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+    
+            @keyframes slideUp {
+                from { transform: translateY(20px); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+    
+            .content h1 {
+                margin-bottom: 20px;
+                animation: bounceIn 1s ease-out;
+            }
+    
+            @keyframes bounceIn {
+                0% { transform: scale(0.5); opacity: 0; }
+                50% { transform: scale(1.05); opacity: 1; }
+                100% { transform: scale(1); }
+            }
+         
+        </style>
+    </head>
+    
+<body>
+    <div id="audio-container" class="hidden-audio"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+            <li><a href="gallery.html"><ion-icon name="images-outline"></ion-icon> Gallery</a></li>
+            <li><a href="playlist.html"><ion-icon name="musical-notes-outline"></ion-icon> Playlist</a></li>
+            <li><a href="registry.html"><ion-icon name="gift-outline"></ion-icon> Registry</a></li>
+            <li><a href="guestbook.html"><ion-icon name="book-outline"></ion-icon> Guestbook</a></li>
+            <li><a href="timeline.html"><ion-icon name="time-outline"></ion-icon> Timeline</a></li>
+            <li><a href="watchbites.html"><ion-icon name="videocam-outline"></ion-icon> Watch Bites</a></li>
+            <li><a href="thankyou.html"><ion-icon name="heart-outline"></ion-icon> Thank You</a></li>
+            <li><a href="https://instagram.com/nic_faii" target="_blank" class="instagram-icon">
+            <img src="imges/image1.jpg" alt="Instagram">
+            </a></li>
+        </ul>
+    </nav>
+
+    <div id="loadingSpinner" class="loading-spinner">
+        <img src="imges/Beating hearts.gif" alt="Loading...">
+    </div>
+
+    <div class="content">
+        <div class="welcome-message">
+            <h1>Happy 17th Birthday!</h1>
+            <p>Welcome to the celebration of a special day. We’re thrilled to have you join us in celebrating this milestone!</p>
+        </div>
+
+        <div class="birthday-card">
+            <h2>Happy Birthday, Babe!</h2>
+            <p>Wishing you a day filled with love, laughter, and joy. May all your dreams come true as you step into this new year of life!</p>
+            <img src="imges/pexels-jennifer-murray-402778-1200666.jpg" alt="Birthday Cake" style="width: 100px; height: auto; margin-top: 10px;">
+        </div>
+
+        <div class="gallery-preview">
+            <h2>Here’s a sneak peek of what’s to come:</h2>
+            <img src="imges/17th Birthday Gift For Girls,gift For 17th Birthday Girl,seventeenth Birthday Gift For Her,17 Year Old Girl Gift Ideas,17th Birthday T-shirt Sticker.jpeg" alt="Gallery Preview" style="width: 300px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Happy Birthday!</h1>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="playlist.html">Playlist</a>
+                <a href="registry.html">Registry</a>
+                <a href="guestbook.html">Guestbook</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="thankyou.html">Thank You</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=61555114287843" target="_blank" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://instagram.com/nic_faii" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 <a href="https://yourwebsite.com">Your Website</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/audio-player.js"></script>
+    <script>
+        document.getElementById('audio-container').innerHTML = `
+            <iframe src="audio-player.html" style="border: none; width: 0; height: 0;"></iframe>
+        `;
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

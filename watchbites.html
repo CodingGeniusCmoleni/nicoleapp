@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Bites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Gloria+Hallelujah&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Watch Bites Page Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef6e4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .watch-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fffaf3;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .watch-container h1 {
+            text-align: center;
+            color: #ff6f61;
+            font-family: 'Permanent Marker', cursive;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .section-title {
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 1.8rem;
+            color: #ff6f61;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .item img {
+            max-width: 120px;
+            border-radius: 10px;
+            margin-right: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item a {
+            text-decoration: none;
+            color: #333;
+            flex: 1;
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            margin-top: 15px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="audio-container" class="hidden-audio"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+            <li><a href="gallery.html"><ion-icon name="images-outline"></ion-icon> Gallery</a></li>
+            <li><a href="playlist.html"><ion-icon name="musical-notes-outline"></ion-icon> Playlist</a></li>
+            <li><a href="registry.html"><ion-icon name="gift-outline"></ion-icon> Registry</a></li>
+            <li><a href="guestbook.html"><ion-icon name="book-outline"></ion-icon> Guestbook</a></li>
+            <li><a href="timeline.html"><ion-icon name="time-outline"></ion-icon> Timeline</a></li>
+            <li><a href="watchbites.html"><ion-icon name="videocam-outline"></ion-icon> Watch Bites</a></li>
+            <li><a href="thankyou.html"><ion-icon name="heart-outline"></ion-icon> Thank You</a></li>
+            <li><a href="https://instagram.com/her_instagram_handle" target="_blank" class="instagram-icon">
+                <img src="https://www.instagram.com/her_instagram_handle/profile_pic_url" alt="Instagram">
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class="watch-container">
+        <h1>Watch Bites</h1>
+
+        <div class="section-title">Favorite Movies</div>
+
+        <div class="item">
+            <img src="imges/Premium Photo _ Reels Instagram Logo_ New Feature Social Media App 3D Rendering.jpeg" alt="Movie 1">
+            <a href="https://www.imdb.com/title/movie1" target="_blank">
+                Reels: On behalf of everyone, you watch this more than movies.
+            </a>
+        </div>
+
+        <div class="item">
+            <img src="imges/Peppa Pig.jpeg" alt="Movie 2">
+            <a href="https://www.imdb.com/title/movie2" target="_blank">
+                Peppa Pig: I remember one of the first days you were crazy about this.
+            </a>
+        </div>
+
+        <div class="item">
+            <img src="imges/Fifty Shades of Grey_  1_6.jpeg" alt="Movie 3">
+            <a href="https://www.imdb.com/title/movie3" target="_blank">
+                Fifty Shades of Grey: hmmm if you know you know.
+            </a>
+        </div>
+
+        <div class="section-title">Favorite TV Shows</div>
+
+        <div class="item">
+            <img src="imges/Chicago Fire Season 12 Adds A New Character (& It's A Familiar Face).jpeg" alt="TV Show 1">
+            <a href="https://hdobox.se/tv/chicago-fire-39512" target="_blank">
+                Chicago Fire: I dont know why you love this, but i love you.
+            </a>
+        </div>
+
+        <div class="item">
+            <img src="imges/Young Sheldon Poster Collection_ 30+ Amazing Posters for Sheldon Cooper Fans.jpeg" alt="TV Show 2">
+            <a href="https://www.imdb.com/title/tvshow2" target="_blank">
+                Young Sheldon: We both loved this together. it was amaizing.
+            </a>
+        </div>
+
+        <div class="item">
+            <img src="imges/9718c845-50ce-4d76-ab42-70f5b88e43b5.jpeg" alt="TV Show 3">
+            <a href="https://www.imdb.com/title/tvshow3" target="_blank">
+                Pretty Little Liars: This is a great show.
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Happy Birthday!</h1>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="playlist.html">Playlist</a>
+                <a href="registry.html">Registry</a>
+                <a href="guestbook.html">Guestbook</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="watchbites.html">Watch Bites</a>
+                <a href="thankyou.html">Thank You</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 <a href="https://yourwebsite.com">Your Website</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script>
+        document.getElementById('audio-container').innerHTML = `
+            <iframe src="audio-player5.html" style="border: none; width: 0; height: 0;"></iframe>
+        `;
+    </script>
+</body>
+</html>

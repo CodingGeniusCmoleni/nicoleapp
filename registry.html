@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Registry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Registry Page Styles */
+        .registry-container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .registry-container h1 {
+            text-align: center;
+            color: #ff6f61;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-item h3 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .product-item a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #ff6f61;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .product-item a:hover {
+            background: #ff8f81;
+        }
+    </style>
+</head>
+<body>
+    <div id="audio-container" class="hidden-audio"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+            <li><a href="gallery.html"><ion-icon name="images-outline"></ion-icon> Gallery</a></li>
+            <li><a href="playlist.html"><ion-icon name="musical-notes-outline"></ion-icon> Playlist</a></li>
+            <li><a href="registry.html"><ion-icon name="gift-outline"></ion-icon> Registry</a></li>
+            <li><a href="guestbook.html"><ion-icon name="book-outline"></ion-icon> Guestbook</a></li>
+            <li><a href="timeline.html"><ion-icon name="time-outline"></ion-icon> Timeline</a></li>
+            <li><a href="watchbites.html"><ion-icon name="videocam-outline"></ion-icon> Watch Bites</a></li>
+            <li><a href="thankyou.html"><ion-icon name="heart-outline"></ion-icon> Thank You</a></li>
+            <li><a href="https://instagram.com/her_instagram_handle" target="_blank" class="instagram-icon">
+                <img src="https://www.instagram.com/her_instagram_handle/profile_pic_url" alt="Instagram">
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class="registry-container">
+        <h1>Gift Registry</h1>
+        <div class="products">
+            <div class="product-item">
+                <img src="imges/croc charms.jpeg" alt="Product 1">
+                <h3>Crocs</h3>
+                <a href="https://kccnailss.com/" target="_blank">View Product</a>
+            </div>
+            <div class="product-item">
+                <img src="imges/7 Beauty Finds for 40+ Women -.jpeg" alt="Product 2">
+                <h3>Eye stuff</h3>
+                <a href="https://www.maybelline.co.in/all-products/eyes/mascara/lash-sensational-mascara?variant=waterproof" target="_blank">View Product</a>
+            </div>
+            <div class="product-item">
+                <img src="imges/download.jpeg" alt="Product 3">
+                <h3>Pure Joy</h3>
+                <a href="https://www.mcdonalds.com/gb/en-gb.html" target="_blank">View Product</a>
+            </div>
+            <div class="product-item">
+                <img src="imges/01bb137e-5719-47e8-9888-e15f2360ce0f.jpeg" alt="Product 3">
+                <h3>Buy your boyfriend</h3>
+                <a href="https://www.porschebrooklyn.com/inventory/new-2025-porsche-911-carrera-rear-wheel-drive-coupe-wp0aa2a97ss206224/" target="_blank">View Product</a>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Happy Birthday!</h1>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="playlist.html">Playlist</a>
+                <a href="registry.html">Registry</a>
+                <a href="guestbook.html">Guestbook</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="thankyou.html">Thank You</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 <a href="https://yourwebsite.com">Your Website</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script>
+        document.getElementById('audio-container').innerHTML = `
+            <iframe src="audio-player3.html" style="border: none; width: 0; height: 0;"></iframe>
+        `;
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div id="audio-container" class="hidden-audio"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+            <li><a href="gallery.html"><ion-icon name="images-outline"></ion-icon> Gallery</a></li>
+            <li><a href="playlist.html"><ion-icon name="musical-notes-outline"></ion-icon> Playlist</a></li>
+            <li><a href="registry.html"><ion-icon name="gift-outline"></ion-icon> Registry</a></li>
+            <li><a href="guestbook.html"><ion-icon name="book-outline"></ion-icon> Guestbook</a></li>
+            <li><a href="timeline.html"><ion-icon name="time-outline"></ion-icon> Timeline</a></li>
+            <li><a href="watchbites.html"><ion-icon name="videocam-outline"></ion-icon> Watch Bites</a></li>
+            <li><a href="thankyou.html"><ion-icon name="heart-outline"></ion-icon> Thank You</a></li>
+        </ul>
+    </nav>
+
+    <div id="loadingSpinner" class="loading-spinner">
+        <img src="images/loading.gif" alt="Loading...">
+    </div>
+
+    <div class="content">
+        <h1>Photo Gallery aka Girlfriend museam</h1>
+        <p>Here are some beautiful memories of the girl who i love the most:</p>
+        <div class="gallery">
+            <a href="imges/image1.jpg" data-lightbox="gallery" data-title="Memory 1">
+                <img src="imges/image1.jpg" alt="Memory 1">
+            </a>
+            <a href="imges/image3.jpg" data-lightbox="gallery" data-title="Memory 2">
+                <img src="imges/image3.jpg" alt="Memory 2">
+            </a>
+            <a href="imges/image 4.jpg" data-lightbox="gallery" data-title="Memory 2">
+                <img src="imges/image 4.jpg" alt="Memory 2">
+            </a>
+            <a href="imges/image2.jpg" data-lightbox="gallery" data-title="Memory 2">
+                <img src="imges/image2.jpg" alt="Memory 2">
+            </a>
+            <!-- Add more images here -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Happy Birthday!</h1>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="playlist.html">Playlist</a>
+                <a href="registry.html">Registry</a>
+                <a href="guestbook.html">Guestbook</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="thankyou.html">Thank You</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 <a href="https://yourwebsite.com">Your Website</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('audio-container').innerHTML = `
+            <iframe src="audio-player.html" style="border: none; width: 0; height: 0;"></iframe>
+        `;
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
